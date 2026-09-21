@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visione Vistorias em Alfredo Chaves. Vistoria veicular ágil, segura e credenciada pelo DETRAN-ES.">
+  <meta name="theme-color" content="#1d4ed8">
+  <title>Visione Vistorias | Unidade Alfredo Chaves</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 950: '#172554' },
+            ink: '#0b1c30',
+            emerald: '#10b981'
+          },
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          boxShadow: { soft: '0 18px 50px rgba(15, 23, 42, .10)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { overflow-x: hidden; }
+    .material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24; }
+    .hero-grid { background-image: radial-gradient(circle at 1px 1px, rgba(37,99,235,.12) 1px, transparent 0); background-size: 24px 24px; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .faq-icon { transform: rotate(180deg); }
+    .mobile-menu.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .time-slot.active { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }
+  </style>
+</head>
+<body class="bg-slate-50 font-sans text-ink antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#inicio" class="shrink-0" aria-label="Visione Vistorias - Início">
+        <img src="logo.svg" alt="Visione Vistorias - Unidade Alfredo Chaves" class="h-12 w-auto sm:h-14">
+      </a>
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
+        <a href="#inicio" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Início</a>
+        <a href="#servicos" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Serviços</a>
+        <a href="#diferenciais" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Diferenciais</a>
+        <a href="#localizacao" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Localização</a>
+        <a href="#faq" class="text-sm font-semibold text-slate-600 transition hover:text-brand-700">Dúvidas</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/5528999428877?text=Olá!%20Gostaria%20de%20agendar%20uma%20vistoria." target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-lg bg-brand-700 px-4 py-3 text-sm font-bold text-white shadow-md transition hover:bg-brand-800 sm:inline-flex">
+          <span class="material-symbols-outlined text-lg">chat</span> Agendar vistoria
+        </a>
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu" class="grid h-11 w-11 place-items-center rounded-lg border border-slate-200 bg-white text-slate-700 lg:hidden">
+          <span id="menu-icon" class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu pointer-events-none absolute inset-x-4 top-[72px] translate-y-[-8px] rounded-2xl border border-slate-200 bg-white p-3 opacity-0 shadow-soft transition lg:hidden">
+      <nav class="grid">
+        <a href="#inicio" class="rounded-lg px-4 py-3 font-semibold hover:bg-brand-50">Início</a>
+        <a href="#servicos" class="rounded-lg px-4 py-3 font-semibold hover:bg-brand-50">Serviços</a>
+        <a href="#diferenciais" class="rounded-lg px-4 py-3 font-semibold hover:bg-brand-50">Diferenciais</a>
+        <a href="#localizacao" class="rounded-lg px-4 py-3 font-semibold hover:bg-brand-50">Localização</a>
+        <a href="#faq" class="rounded-lg px-4 py-3 font-semibold hover:bg-brand-50">Dúvidas</a>
+        <a href="tel:+552832691480" class="mt-2 flex items-center justify-center gap-2 rounded-lg bg-slate-100 px-4 py-3 font-bold text-brand-800">
+          <span class="material-symbols-outlined">call</span> (28) 3269-1480
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="pt-20">
+    <div class="bg-brand-950 px-4 py-2.5 text-white">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center text-xs font-semibold sm:justify-between sm:text-left">
+        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-emerald-400">verified</span> ECV credenciada e regulamentada pelo DETRAN-ES</span>
+        <span class="flex items-center gap-2"><span class="material-symbols-outlined text-base text-brand-200">schedule</span> Segunda a sexta, das 7h30 às 17h30</span>
+      </div>
+    </div>
+
+    <section class="hero-grid relative overflow-hidden bg-gradient-to-b from-brand-50 to-slate-50 py-14 sm:py-20">
+      <div class="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-200/40 blur-3xl"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+        <div class="lg:col-span-7">
+          <div class="mb-6 flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-white px-3 py-1.5 text-xs font-bold text-brand-800"><span class="material-symbols-outlined text-base">verified</span> ECV homologada</span>
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700"><span class="material-symbols-outlined text-base text-emerald">timer</span> Laudo com agilidade</span>
+            <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700"><span class="material-symbols-outlined text-base text-brand-600">precision_manufacturing</span> Tecnologia e precisão</span>
+          </div>
+          <h1 class="max-w-4xl text-4xl font-extrabold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">Vistoria veicular com <span class="text-brand-700">segurança e agilidade</span> em Alfredo Chaves.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">Laudos técnicos confiáveis, atendimento transparente e uma equipe pronta para cuidar de cada detalhe do seu veículo.</p>
+          <div class="mt-7 grid max-w-2xl gap-3 sm:grid-cols-2">
+            <div class="flex items-center gap-2 text-sm font-semibold text-slate-700"><span class="material-symbols-outlined text-xl text-emerald">check_circle</span> Equipe qualificada</div>
+            <div class="flex items-center gap-2 text-sm font-semibold text-slate-700"><span class="material-symbols-outlined text-xl text-emerald">check_circle</span> Atendimento para carros e motos</div>
+            <div class="flex items-center gap-2 text-sm font-semibold text-slate-700"><span class="material-symbols-outlined text-xl text-emerald">check_circle</span> Processo claro e confiável</div>
+            <div class="flex items-center gap-2 text-sm font-semibold text-slate-700"><span class="material-symbols-outlined text-xl text-emerald">check_circle</span> Integração com o DETRAN-ES</div>
+          </div>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#agendamento" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-4 font-bold text-white shadow-lg shadow-brand-700/20 transition hover:-translate-y-0.5 hover:bg-brand-800"><span class="material-symbols-outlined">calendar_month</span> Agendar agora</a>
+            <a href="https://wa.me/5528999428877?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida%20sobre%20vistoria." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-4 font-bold text-slate-800 shadow-sm transition hover:bg-slate-100"><span class="material-symbols-outlined text-emerald">chat</span> Falar no WhatsApp</a>
+          </div>
+        </div>
+        <div class="relative lg:col-span-5">
+          <div class="overflow-hidden rounded-3xl bg-brand-950 shadow-soft">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1V6hq6R2KdWgwin07GqhtrRFVGdXaEKQcMbgfLxzDSqDp0_8nWijNoP0v1Kv0YT-SStSMiwIfiU08ztOHd2QXap-ZJGnCb4ft39Afa2y3oT9sd2NRqfPUs41Fvsqvlo-QR98gdePGvf0hbbGcbNe9JHGTiCi_EZGTlgmydvaLNErwqevolJKd7b-wesySyeeGafPt4e_KeOuf3h-P_eIdRlNc9Nexc71ZVoToknCwoBSmd_OfSmwdfGSw" alt="Pátio de vistoria veicular" class="h-[430px] w-full object-cover opacity-90" loading="eager">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-t from-brand-950/70 via-transparent to-transparent"></div>
+            <div class="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-xs font-bold text-slate-800 shadow-md backdrop-blur">
+              <span class="h-2.5 w-2.5 animate-pulse rounded-full bg-emerald"></span> Unidade Alfredo Chaves
+            </div>
+            <div class="absolute inset-x-5 bottom-5 rounded-2xl border border-white/20 bg-white/95 p-4 shadow-xl backdrop-blur">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-xl bg-emerald/10 text-emerald"><span class="material-symbols-outlined">shield</span></div>
+                <div><p class="font-bold text-slate-900">Vistoria com confiança</p><p class="text-xs text-slate-500">Procedimento técnico e atendimento cuidadoso</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-700 py-8 text-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div><p class="text-2xl font-extrabold sm:text-3xl">Credenciada</p><p class="mt-1 text-xs text-brand-100 sm:text-sm">Empresa oficial DETRAN-ES</p></div>
+        <div><p class="text-2xl font-extrabold sm:text-3xl">Ágil</p><p class="mt-1 text-xs text-brand-100 sm:text-sm">Respeito ao seu tempo</p></div>
+        <div><p class="text-2xl font-extrabold sm:text-3xl">Precisa</p><p class="mt-1 text-xs text-brand-100 sm:text-sm">Tecnologia na inspeção</p></div>
+        <div><p class="text-2xl font-extrabold sm:text-3xl">Segura</p><p class="mt-1 text-xs text-brand-100 sm:text-sm">Procedimento transparente</p></div>
+      </div>
+    </section>
+
+    <section id="servicos" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-extrabold uppercase tracking-[.2em] text-brand-700">Nossos serviços</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Tudo o que você precisa para rodar tranquilo</h2>
+          <p class="mt-4 text-slate-600">Inspeções realizadas com atenção, tecnologia e orientação clara em todas as etapas.</p>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined text-3xl">sync_alt</span></div>
+            <h3 class="mt-5 text-lg font-bold">Transferência</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">Inspeção necessária para compra e venda, mudança de município ou propriedade do veículo.</p>
+            <button type="button" data-service="Transferência de propriedade" class="service-button mt-6 inline-flex items-center gap-1 text-sm font-bold text-brand-700">Agendar serviço <span class="material-symbols-outlined text-lg">arrow_forward</span></button>
+          </article>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined text-3xl">fact_check</span></div>
+            <h3 class="mt-5 text-lg font-bold">Vistoria cautelar</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">Análise detalhada da estrutura, identificação e histórico para uma negociação mais segura.</p>
+            <button type="button" data-service="Vistoria cautelar" class="service-button mt-6 inline-flex items-center gap-1 text-sm font-bold text-brand-700">Agendar serviço <span class="material-symbols-outlined text-lg">arrow_forward</span></button>
+          </article>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined text-3xl">directions_car</span></div>
+            <h3 class="mt-5 text-lg font-bold">Regularização</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">Vistoria para alterações de características, motor, chassi e atualização cadastral.</p>
+            <button type="button" data-service="Regularização veicular" class="service-button mt-6 inline-flex items-center gap-1 text-sm font-bold text-brand-700">Agendar serviço <span class="material-symbols-outlined text-lg">arrow_forward</span></button>
+          </article>
+          <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="grid h-12 w-12 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined text-3xl">two_wheeler</span></div>
+            <h3 class="mt-5 text-lg font-bold">Carros e motos</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">Atendimento completo para veículos leves e motocicletas, com cuidado em cada item.</p>
+            <button type="button" data-service="Vistoria para carro ou moto" class="service-button mt-6 inline-flex items-center gap-1 text-sm font-bold text-brand-700">Agendar serviço <span class="material-symbols-outlined text-lg">arrow_forward</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="bg-brand-950 py-20 text-white sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-[.2em] text-brand-200">Por que escolher a Visione</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Confiança do início ao fim</h2>
+            <p class="mt-5 max-w-xl leading-relaxed text-slate-300">Nossa unidade combina conhecimento técnico, atendimento próximo e processos modernos para tornar sua vistoria simples e segura.</p>
+            <a href="https://wa.me/5528999428877?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20vistoria." target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-emerald px-6 py-4 font-bold text-white transition hover:bg-emerald-600"><span class="material-symbols-outlined">chat</span> Conversar com a equipe</a>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6"><span class="material-symbols-outlined text-3xl text-brand-200">speed</span><h3 class="mt-4 font-bold">Atendimento ágil</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Processo organizado para você ganhar tempo.</p></div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6"><span class="material-symbols-outlined text-3xl text-brand-200">verified_user</span><h3 class="mt-4 font-bold">Credenciamento oficial</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Procedimentos alinhados às normas do DETRAN-ES.</p></div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6"><span class="material-symbols-outlined text-3xl text-brand-200">handshake</span><h3 class="mt-4 font-bold">Atendimento humano</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Orientação clara e cordial em todas as etapas.</p></div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6"><span class="material-symbols-outlined text-3xl text-brand-200">precision_manufacturing</span><h3 class="mt-4 font-bold">Tecnologia e precisão</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Equipamentos adequados para uma inspeção confiável.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agendamento" class="py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-12">
+          <div id="localizacao" class="lg:col-span-5">
+            <p class="text-sm font-extrabold uppercase tracking-[.2em] text-brand-700">Unidade Alfredo Chaves</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight">Venha fazer sua vistoria com a gente</h2>
+            <p class="mt-4 leading-relaxed text-slate-600">Entre em contato para confirmar o endereço, tirar dúvidas e escolher o melhor horário para o atendimento.</p>
+            <div class="mt-8 space-y-4">
+              <a href="tel:+552832691480" class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand-200">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined">call</span></span>
+                <span><span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Telefone</span><span class="mt-1 block font-bold">(28) 3269-1480</span></span>
+              </a>
+              <a href="https://wa.me/5528999428877" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-emerald-300">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-emerald/10 text-emerald"><span class="material-symbols-outlined">chat</span></span>
+                <span><span class="block text-xs font-bold uppercase tracking-wider text-slate-400">WhatsApp</span><span class="mt-1 block font-bold">(28) 99942-8877</span></span>
+              </a>
+              <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined">schedule</span></span>
+                <span><span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Atendimento</span><span class="mt-1 block font-bold">Segunda a sexta, 7h30 às 17h30</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7">
+            <form id="booking-form" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft sm:p-8">
+              <div class="flex items-center gap-3">
+                <span class="grid h-11 w-11 place-items-center rounded-xl bg-brand-100 text-brand-700"><span class="material-symbols-outlined">calendar_month</span></span>
+                <div><h3 class="text-xl font-bold">Agende pelo WhatsApp</h3><p class="text-sm text-slate-500">Preencha os dados e envie sua solicitação.</p></div>
+              </div>
+              <div class="mt-7 grid gap-5 sm:grid-cols-2">
+                <label class="block"><span class="text-sm font-bold text-slate-700">Nome completo</span><input id="name" type="text" required placeholder="Seu nome" class="mt-2 h-12 w-full rounded-xl border border-slate-300 px-4 outline-none transition focus:border-brand-600 focus:ring-4 focus:ring-brand-100"></label>
+                <label class="block"><span class="text-sm font-bold text-slate-700">Telefone</span><input id="phone" type="tel" required placeholder="(28) 99999-9999" class="mt-2 h-12 w-full rounded-xl border border-slate-300 px-4 outline-none transition focus:border-brand-600 focus:ring-4 focus:ring-brand-100"></label>
+                <label class="block sm:col-span-2"><span class="text-sm font-bold text-slate-700">Serviço</span><select id="service" class="mt-2 h-12 w-full rounded-xl border border-slate-300 bg-white px-4 outline-none transition focus:border-brand-600 focus:ring-4 focus:ring-brand-100"><option>Transferência de propriedade</option><option>Vistoria cautelar</option><option>Regularização veicular</option><option>Vistoria para carro ou moto</option><option>Outros</option></select></label>
+                <label class="block"><span class="text-sm font-bold text-slate-700">Veículo</span><input id="vehicle" type="text" placeholder="Marca / modelo" class="mt-2 h-12 w-full rounded-xl border border-slate-300 px-4 outline-none transition focus:border-brand-600 focus:ring-4 focus:ring-brand-100"></label>
+                <label class="block"><span class="text-sm font-bold text-slate-700">Data desejada</span><input id="date" type="date" class="mt-2 h-12 w-full rounded-xl border border-slate-300 px-4 outline-none transition focus:border-brand-600 focus:ring-4 focus:ring-brand-100"></label>
+              </div>
+              <div class="mt-5">
+                <span class="text-sm font-bold text-slate-700">Horário preferencial</span>
+                <div class="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="08:30">08:30</button>
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="09:30">09:30</button>
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="10:30">10:30</button>
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="14:00">14:00</button>
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="15:30">15:30</button>
+                  <button type="button" class="time-slot rounded-lg border border-slate-200 px-2 py-2 text-xs font-bold transition hover:border-brand-600" data-time="16:30">16:30</button>
+                </div>
+              </div>
+              <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-4 font-bold text-white shadow-lg shadow-brand-700/20 transition hover:bg-brand-800"><span class="material-symbols-outlined">chat</span> Enviar solicitação no WhatsApp</button>
+              <p class="mt-3 text-center text-xs text-slate-400">Você será redirecionado ao WhatsApp para concluir o atendimento.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center"><p class="text-sm font-extrabold uppercase tracking-[.2em] text-brand-700">Dúvidas frequentes</p><h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Informação clara para você</h2></div>
+        <div class="mt-10 space-y-3">
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Quais documentos devo levar?<span class="faq-icon material-symbols-outlined shrink-0 text-brand-700 transition">expand_more</span></summary><p class="mt-4 text-sm leading-relaxed text-slate-600">Leve o documento do veículo e um documento oficial com foto. Para casos específicos, fale com nossa equipe antes de ir à unidade.</p></details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Preciso agendar a vistoria?<span class="faq-icon material-symbols-outlined shrink-0 text-brand-700 transition">expand_more</span></summary><p class="mt-4 text-sm leading-relaxed text-slate-600">O agendamento é recomendado para garantir mais comodidade. Envie sua solicitação pelo WhatsApp e nossa equipe confirmará o horário.</p></details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Quanto tempo leva o atendimento?<span class="faq-icon material-symbols-outlined shrink-0 text-brand-700 transition">expand_more</span></summary><p class="mt-4 text-sm leading-relaxed text-slate-600">O tempo varia conforme o serviço e o veículo. Trabalhamos com organização e agilidade para concluir o processo o mais rápido possível.</p></details>
+          <details class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><summary class="flex cursor-pointer items-center justify-between gap-4 font-bold">Vocês atendem carros e motos?<span class="faq-icon material-symbols-outlined shrink-0 text-brand-700 transition">expand_more</span></summary><p class="mt-4 text-sm leading-relaxed text-slate-600">Sim. Entre em contato pelo telefone ou WhatsApp para confirmar o serviço adequado ao seu tipo de veículo.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-brand-700 to-brand-600 py-14 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-7 px-4 text-center sm:px-6 lg:flex-row lg:px-8 lg:text-left">
+        <div><h2 class="text-2xl font-extrabold sm:text-3xl">Seu veículo em boas mãos.</h2><p class="mt-2 text-brand-100">Fale agora com a Visione Vistorias de Alfredo Chaves.</p></div>
+        <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+          <a href="tel:+552832691480" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 px-6 py-4 font-bold transition hover:bg-white/10"><span class="material-symbols-outlined">call</span> Ligar agora</a>
+          <a href="https://wa.me/5528999428877?text=Olá!%20Gostaria%20de%20agendar%20uma%20vistoria." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-4 font-bold text-brand-700 transition hover:bg-brand-50"><span class="material-symbols-outlined">chat</span> Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-950 py-12 text-slate-300">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div><img src="logo.svg" alt="Visione Vistorias" class="h-14 w-auto rounded-lg bg-white p-1"><p class="mt-5 max-w-sm text-sm leading-relaxed text-slate-400">Vistoria veicular com qualidade, transparência e respeito ao seu tempo em Alfredo Chaves.</p></div>
+      <div><h3 class="font-bold text-white">Navegação</h3><div class="mt-4 grid gap-2 text-sm"><a href="#servicos" class="hover:text-white">Serviços</a><a href="#diferenciais" class="hover:text-white">Diferenciais</a><a href="#agendamento" class="hover:text-white">Agendamento</a><a href="#faq" class="hover:text-white">Dúvidas frequentes</a></div></div>
+      <div><h3 class="font-bold text-white">Atendimento</h3><div class="mt-4 space-y-3 text-sm"><a href="tel:+552832691480" class="flex items-center gap-2 hover:text-white"><span class="material-symbols-outlined text-lg">call</span> (28) 3269-1480</a><a href="https://wa.me/5528999428877" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white"><span class="material-symbols-outlined text-lg">chat</span> (28) 99942-8877</a><p class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">schedule</span> Seg. a sex., 7h30 às 17h30</p></div></div>
+    </div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-7 text-center text-xs text-slate-500 sm:px-6 lg:px-8">© <span id="year"></span> Visione Vistorias — Unidade Alfredo Chaves. Todos os direitos reservados.</div>
+  </footer>
+
+  <a href="https://wa.me/5528999428877?text=Olá!%20Gostaria%20de%20agendar%20uma%20vistoria." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" class="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-emerald text-white shadow-xl transition hover:scale-105 hover:bg-emerald-600"><span class="material-symbols-outlined text-3xl">chat</span></a>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const setMenuOpen = (isOpen) => {
+      mobileMenu.classList.toggle('open', isOpen);
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuIcon.textContent = isOpen ? 'close' : 'menu';
+    };
+    menuButton.addEventListener('click', () => setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true'));
+    mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
+
+    const dateInput = document.getElementById('date');
+    const today = new Date();
+    today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    dateInput.min = today.toISOString().split('T')[0];
+
+    let selectedTime = '';
+    document.querySelectorAll('.time-slot').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.time-slot').forEach((slot) => slot.classList.remove('active'));
+        button.classList.add('active');
+        selectedTime = button.dataset.time;
+      });
+    });
+
+    document.querySelectorAll('.service-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.getElementById('service').value = button.dataset.service;
+        document.getElementById('agendamento').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.getElementById('booking-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      const vehicle = document.getElementById('vehicle').value.trim() || 'Não informado';
+      const date = dateInput.value ? dateInput.value.split('-').reverse().join('/') : 'A combinar';
+      const time = selectedTime || 'A combinar';
+      const message = `Olá! Gostaria de agendar uma vistoria.%0A%0A*Nome:* ${encodeURIComponent(name)}%0A*Telefone:* ${encodeURIComponent(phone)}%0A*Serviço:* ${encodeURIComponent(service)}%0A*Veículo:* ${encodeURIComponent(vehicle)}%0A*Data:* ${encodeURIComponent(date)}%0A*Horário:* ${encodeURIComponent(time)}`;
+      window.open(`https://wa.me/5528999428877?text=${message}`, '_blank', 'noopener,noreferrer');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
